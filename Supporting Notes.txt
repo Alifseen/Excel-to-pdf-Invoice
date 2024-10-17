@@ -34,3 +34,25 @@ quis nostrud exercitation ullamco.
 pdf.set_font(family="Times", size=12)
 pdf.multi_cell(w=0, h=6, txt=content)
 pdf.output("output.pdf")
+
+Pycharm Debugger:
+Without function definitions:
+Create a debugging breakpoint in the line where error occured
+execute debug, this executes the code till the break line
+it also opens two tabs, debugger tab and console tab
+
+console tab is same as python except for the fact that it lets you experiment with the line after the breaking point where the error occured. So this console has the code till the breakpoint executed and frozen.
+This allows you to debug error codes without worrying about changing the code till you have figured out what to do.
+
+In case of more subtle logical errors where you are not getting the output you should. You can place the breakpoint at the first line and execute the code 1 line at a time, step by step, using the debugger tab and pressing "step into my code".
+This will give you the output of each line executed in the debugger tab to see which line has the logical error.
+
+
+With function definitions:
+In this case, you will get multiple error lines, the last line is where the problem is indicated usually. That is where you can add a breakpoint and check. Incase of subtle logical errors where you are not getting the output you want, place the break point in the first line after the function definition.
+
+Stepover button skips executing the function definition lines and executes the next line instead.
+
+step into button takes you into the modules code as well, where as step into my code only goes into your code, not the libraries.
+
+Run to cursor button execute all the lines between breakpoint and the cursor
