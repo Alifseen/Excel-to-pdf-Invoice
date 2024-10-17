@@ -1,0 +1,8 @@
+Section 25
+Think of User:
+think of user when creating a program
+If alot of people will use it, then you should have a GUI or webapp, otherwise CLI is fine.
+Usually automation programs are written as scripts.
+
+Input vs Output:
+For front end you have a visual design to follow, so you can plan your code according, but that is not the case in backend. So the trick is to write pseudo code starting from input and output, then adding things in between
